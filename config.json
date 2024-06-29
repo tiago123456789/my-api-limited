@@ -1,0 +1,12 @@
+{
+    "route": "/api/products",
+    "httpVerb": "GET",
+    "successResponse": {
+        "message": "Ok",
+        "statusCode": 200
+    },
+    "rateLimit": {
+        "period": 60, 
+        "limitRequestInPeriod": 10
+    }
+}

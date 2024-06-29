@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  my_api_limited:
+    build: ./
+    ports:
+      - 3000:3000
+    container_name: my_api_limited
+    environment:
+      - RATE_LIMIT_PERIOD=10
+      - RATE_LIMIT_REQUEST_IN_PERIOD=5
